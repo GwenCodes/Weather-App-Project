@@ -30,9 +30,8 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-
-  if (minutes < 10) return `${day} ${hours}:${minutes}`;
 }
+if (minutes < 10) return `${day} ${hours}:${minutes}`;
 
 function searchCity(city) {
   let apiKey = "61dfa07e8o8462teba3fadad30e70d77";
