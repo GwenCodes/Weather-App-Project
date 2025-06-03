@@ -9,33 +9,45 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
-    ">
+
     <title>Weather App</title>
   </head>
-  <body>
-    <div class="weather-app">
-      <header>
-        <form>
-          <input type="search" placeholder="Enter city" required />
-          <input type="submit" value="Search" />
-        </form>
-      </header>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
-        </p>
+  <div class="weather-app">
+    <header>
+      <form class="search-form">
+        <input
+          type="search"
+          placeholder="Enter city"
+          required
+          class="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
+    </header>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Tuesday 14:49, scattered clouds
+            <br />
+            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+          </p>
+        </div>
+        <div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
       </div>
-      <div>⛅ 12°C</div>
-      <footer>
-        Coded by <a href="https://github.com/GwenCodes">Gwen Munoz</a>, code
-        hosted on
-        <a href="https://github.com/GwenCodes?tab=repositories">Github</a> and
-        website hosted on
-        <a href="https://gm-weather-app-project.netlify.app/">Netlify</a>
-      </footer>
-    </div>
-  </body>
+    </main>
+    <footer>
+      Coded by <a href="https://github.com/GwenCodes">Gwen Munoz</a>, code
+      hosted on
+      <a href="https://github.com/GwenCodes?tab=repositories">Github</a> and
+      website hosted on
+      <a href="https://gm-weather-app-project.netlify.app/">Netlify</a>
+    </footer>
+  </div>
 </html>
